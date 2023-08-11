@@ -29,6 +29,12 @@ p {
 .img {
   width: 65%;
   height: auto;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  width: 45%;
+  height: auto;
 }
 
 .meet {
@@ -43,6 +49,7 @@ p {
 .justify-content {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .responsive-video {
