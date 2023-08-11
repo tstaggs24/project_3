@@ -36,6 +36,14 @@ p {
   width: 15%;
   height: auto;
 }
+.album {
+  width: 55%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
 
 .meet {
   size-adjust: 75px;
