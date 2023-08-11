@@ -26,6 +26,11 @@ p {
   padding-bottom: 15px;
 }
 
+.img {
+  width: 85%;
+  height: auto;
+}
+
 .meet {
   size-adjust: 75px;
   display: flex;
