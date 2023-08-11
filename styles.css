@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lilita+One&display=swap);
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Black Han Sans";
+  font-size: x-large;
+  padding-top: 25px;
+  color: black;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Black Han Sans";
+  padding-left: 50px;
+  padding-right: 50px;
+  color: black;
+}
+
+.d12 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.meet {
+  size-adjust: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.justify-content {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.social-icon-container img {
+  width: 50%;
+}

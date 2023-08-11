@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>eminem</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io"> </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./index.html"> Home </a>
+
+          <a class="navbar-item" href="./about.html"> About </a>
+
+          <a class="navbar-item" href="./video.html"> Music Videos </a>
+
+          <a class="navbar-item" href="./discography.html"> Discography </a>
+
+          <a class="navbar-item" href="./tour.html"> Tours </a>
+        </div>
+      </div>
+    </nav>
+    <div class="is-responsive">
+      <img src="images/header.png" />
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <img src="images/concert_eminem.jpeg" />
+
+        <a
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi1zYy9j6qAAxV2k4kEHRQmAxAQFnoECA4QAw&url=https%3A%2F%2Fwww.cbsnews.com%2Fdetroit%2Fnews%2Feminem-pops-up-at-ed-sheerans-detroit-concert%2F&usg=AOvVaw1VFFgEuSUiaVW5fYU3To-l&opi=89978449
+  "
+          >EMINEM POPS UP AT ED SHEERAN DETROIT CONCERT!
+        </a>
+      </div>
+      <div class="column">
+        <img src="images/snoop.png" />
+        <a
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiiit25kaqAAxV4IEQIHcGSC6kQvOMEKAB6BAgKEAE&url=https%3A%2F%2Feminem.news%2Fsnoop-dogg-spaghetti.html&usg=AOvVaw3E2QCigaFpPJCCTReEoC9M&opi=89978449"
+        >
+          SNOOP DOG VISITED EMINEMS RESTAURANT IN DETROIT!</a
+        >
+      </div>
+    </div>
+    <!-- <div class="columns is-mobile">
+      <div class="column">
+        <img src="images/spotify.png" />
+      </div>
+      <div class="column">
+        <img src="images/pandora.png" />
+      </div>
+      <div class="column">
+        <img src="images/play.png" />
+      </div>
+      <div class="columns is-mobile">
+        <div class="column">
+          <img src="images/instagram.png" />
+          <p>@eminem</p>
+        </div>
+
+        <div class="column">
+          <img src="images/twitter.png" />
+          <p>Marshal Mathers</p>
+        </div>
+
+        <div class="column is-1">
+          <img src="images/tik-tok.png" />
+          <p>@eminem</p>
+        </div>
+      </div> 
+    </div>-->
+
+    <div class="columns social-icon-container">
+      <div class="column is-text-centered has-text-centered">
+        <img src="./images/spotify.png" alt="instagram-logo" />
+      </div>
+      <div class="column has-text-centered">
+        <img src="./images/play.png" alt="instagram-logo" />
+      </div>
+
+      <div class="column has-text-centered">
+        <img src="./images/pandora.png" alt="instagram-logo" />
+      </div>
+    </div>
+    <div class="columns social-icon-container">
+      <div class="column has-text-centered">
+        <img src="./images/instagram.png" alt="instagram-logo" />
+        <p>@eminem</p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./images/twitter.png" alt="instagram-logo" />
+        <p>Marshal Mathers</p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./images/tik-tok.png" alt="instagram-logo" />
+        <p>@eminem</p>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
