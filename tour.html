@@ -6,12 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"
     />
-    <title>Eminem</title>
+    <title>eminem</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <link rel="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
@@ -45,15 +47,27 @@
         </div>
       </div>
     </nav>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
 
-    <div class="columns">
-      <div class="column">test</div>
-      <div class="column">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quis
-        praesentium magni laborum labore, at officiis architecto. Itaque
-        corporis quisquam dolor, et nobis dolore natus modi ducimus esse autem
-        totam?
-      </div>
-    </div>
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
